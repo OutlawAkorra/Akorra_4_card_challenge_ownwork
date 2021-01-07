@@ -1,0 +1,147 @@
+:root {
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+
+    --darkBlue: hsl(234, 12%, 34%);
+    --grayishBlue: hsl(229, 6%, 66%);
+    --lightGray: hsl(0, 0%, 98%);
+
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--lightGray);
+    font-family: "Poppins", sans-serif;
+}
+.container{
+    width: 70%;
+    margin: 80px auto;
+}
+.wrapper{    
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.col{ 
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.card{
+    margin: 15px;
+    border-radius: 5px;
+    background-color: white;
+    padding: 15px 30px 30px 30px;
+    box-shadow: 0 2px 2px 0 hsl(213, 33%, 82%), 0 6px 20px 0 hsl(213, 33%, 82%);
+}
+.border-cyan{
+    border-top: 4px solid var(--cyan);
+}
+.border-red{
+    border-top: 4px solid var(--red);
+}
+.border-orange{
+    border-top: 4px solid var(--orange);
+}
+.border-blue{
+    border-top: 4px solid var(--blue);
+}
+.float-right{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.title-primary{
+    text-align: center;
+    margin: 5px 0;
+    font-size: 2.2em;
+    font-weight: 100;
+    color: var(--grayishBlue);
+}
+.title-secondary{
+    text-align: center;
+    font: bolder;
+    margin: 5px 0;
+    font-size: 2.2em;
+    font-weight: 600;
+    color: var(--darkBlue);
+}
+.description{
+    text-align: center;
+    font-size: .9em;
+    margin: 15px 0;
+    width: 100%;
+    line-height: 25px;
+    white-space: pre-line;
+    color: var(--grayishBlue);
+}
+.card>.description{
+    text-align: left;
+    margin-top: 0;
+    margin-right: 50px;
+}
+.title-card{
+    font: bolder;
+    font-size: 1.25em;
+    font-weight: 600;
+    color: var(--darkBlue);
+}
+
+/* Big tablet to 1200px (widths smaller taht the 1140px row) */
+@media only screen and (max-width: 1200px) {
+    .container {
+        width: 90%;
+    }
+    .wrapper {    
+        width: 100%;
+        display: block;
+    }
+    
+}
+
+/* Small tablet to big tablet: from 768px to 1023px */
+@media only screen and (max-width: 1023px) {
+   
+}
+
+
+/* Small phones to small tablets: from 481px to 767px */
+@media only screen and (max-width: 767px) {
+
+}
+
+/* Small phones: from 0 to 480px */
+@media only screen and (max-width: 480px) {
+    .description{
+        text-align: center;
+        font-size: .9em;
+        margin: 15px 0;
+        width: 80%;
+        line-height: 25px;
+        white-space: pre-line;
+        color: var(--grayishBlue);
+    }
+}
+
+/*@media screen and (max-height: 700px){
+    .container{
+        width: 90%;
+    }
+    .wrapper{    
+        width: 100%;
+        display: block;
+    }
+    .title-primary{
+        font-size: 1.5em;
+    }
+    .title-secondary{
+        font-size: 1.5em;
+    }
+    .sub-title{ 
+        white-space: normal;
+    }
+}
+*/
